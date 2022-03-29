@@ -1,0 +1,21 @@
+*{margin:0; padding:0;}
+#container{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+#container>div{
+  width:400px;
+  background-color: black;
+  height:400px;
+  margin: 30px;
+}
+/*media의 조건이 지금은 max-width 하나인데 두개 이상으로 설정할 수 있나요?*/
+@media(max-width:1000px){
+  #container{
+    flex-direction: column;
+  }
+}
